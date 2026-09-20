@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+
+<head>
+    <style type="text/css">
+        /* Base navigation link styles */
+        .nav-link {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        .nav-link:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+
+        /* 1. Active State: Highlights the current page or selection */
+        .nav-link.active {
+            color: #28a745;
+            font-weight: bold;
+            pointer-events: none;
+            /* Optional: prevents re-clicking the current page */
+        }
+
+        /* 2. Disabled State: Visual treatment and functional suppression */
+        .nav-link.disabled {
+            color: #6c757d;
+            /* Grayed out color */
+            text-decoration: none;
+            /* Remove underlines */
+            cursor: not-allowed;
+            /* Visual indicator for mice */
+
+            /* Core functional block */
+            pointer-events: none;
+            /* Blocks clicks, hovers, and active states */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Active Navigation Link -->
+    <a href="/home" class="nav-link active">Home</a>
+
+    <!-- Regular Navigation Link -->
+    <a href="/about" class="nav-link">About</a>
+
+    <!-- Disabled Navigation Link -->
+    <a href="/dashboard" class="nav-link disabled" aria-disabled="true" tabindex="-1">Dashboard</a>
+</body>
+
+</html>
