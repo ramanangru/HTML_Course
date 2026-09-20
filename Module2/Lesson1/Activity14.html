@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <style type="text/css">
+        /* 1. Establish the boundary context */
+        .card {
+            position: relative;
+            /* Actively sets the anchor point for the child */
+            width: 300px;
+            height: 200px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        /* 2. Position the child exactly where you want it */
+        .badge {
+            position: absolute;
+            /* Removes the element from normal document flow */
+            top: 20px;
+            /* Places it exactly 20px down from the top edge */
+            right: 20px;
+            /* Places it exactly 20px in from the right edge */
+
+            /* Decorative styling */
+            background-color: #ff4757;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <!-- The parent element that serves as the anchor grid -->
+        <span class="badge">Sale</span>
+        <h3>Product Name</h3>
+        <p>Product details and pricing information go here.</p>
+    </div>
+
+</body>
+
+</html>
