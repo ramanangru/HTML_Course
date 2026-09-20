@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cascading Effect Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f3f3;
+      color: #333;
+      padding: 30px;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background: white;
+      border: 2px solid #666;
+      padding: 25px;
+      border-radius: 10px;
+    }
+
+    h1 {
+      color: blue;
+    }
+
+    .box {
+      color: green;
+      font-size: 20px;
+      margin-top: 20px;
+      padding: 15px;
+      background-color: #eaf7ea;
+      border: 1px solid green;
+    }
+
+    .special {
+      color: red;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Cascading Effect in CSS</h1>
+    <p class="box">
+      This text is green because the <strong>.box</strong> class sets the color.
+    </p>
+    <p class="box special">
+      This text is red because the <strong>.special</strong> class comes later and overrides the earlier color.
+    </p>
+  </div>
+</body>
+</html>
