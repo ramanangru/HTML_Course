@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pseudo Classes Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 40px;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    a {
+      color: blue;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      color: red;
+      text-decoration: underline;
+    }
+
+    a:visited {
+      color: purple;
+    }
+
+    input {
+      padding: 10px;
+      width: 220px;
+      margin-top: 10px;
+      border: 2px solid #999;
+      border-radius: 6px;
+    }
+
+    input:focus {
+      border-color: green;
+      outline: none;
+      box-shadow: 0 0 5px rgba(0, 128, 0, 0.5);
+    }
+
+    li:first-child {
+      color: darkblue;
+      font-weight: bold;
+    }
+
+    li:last-child {
+      color: darkgreen;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Pseudo Classes in CSS</h2>
+
+    <p>
+      Visit: <a href="https://example.com">Example Link</a>
+    </p>
+
+    <label for="name">Name:</label><br />
+    <input type="text" id="name" placeholder="Type here" />
+
+    <ul>
+      <li>First item</li>
+      <li>Second item</li>
+      <li>Third item</li>
+    </ul>
+  </div>
+</body>
+</html>
